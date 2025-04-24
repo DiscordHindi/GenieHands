@@ -3,23 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Genie 🧞‍♂️</title>
+  <title>Home Genie - Magical Home Services</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>🧞‍♂️ Welcome to <span>Home Genie</span></h1>
-    <p>Your magical solution for home services!</p>
+  <header>
+    <div class="logo">🧞‍♂️ <span>Home Genie</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <h1>Welcome to <span class="highlight">Home Genie</span></h1>
+    <p>Your magical solution for trusted home services!</p>
+    <a href="#services" class="cta">Explore Services</a>
+  </section>
+
+  <section id="services" class="services">
     <h2>Available Services</h2>
-    <ul>
-      <li>🔧 Plumber</li>
-      <li>💡 Electrician</li>
-      <li>👨‍🍳 Cook</li>
-      <li>🧹 House Cleaning</li>
-    </ul>
+    <div class="service-grid">
+      <div class="card">🔧 <h3>Plumber</h3></div>
+      <div class="card">💡 <h3>Electrician</h3></div>
+      <div class="card">👨‍🍳 <h3>Cook</h3></div>
+      <div class="card">🧹 <h3>Cleaning</h3></div>
+    </div>
+  </section>
 
-    <footer>© 2025 Home Genie</footer>
-  </div>
+  <section id="how" class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>📍 Choose your location</li>
+      <li>🔍 Browse service providers</li>
+      <li>📅 Book your Genie</li>
+      <li>✨ Service delivered magically!</li>
+    </ol>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📧 support@homegenie.com</p>
+    <p>📞 +91 98765 43210</p>
+    <p>📍 Ahmedabad, Gujarat</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Home Genie. Made with 💜 in India.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
