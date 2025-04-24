@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleaning Services | GenieHands</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🧞‍♂️ <span>GenieHands</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plumbing.html">Plumbing</a></li>
+        <li><a href="electricity.html">Electricity</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Cleaning Services</h1>
+    <p>Our professional cleaners will take care of your home with care and precision.</p>
+    <a href="#book-now" class="cta">Book Now</a>
+  </section>
+
+  <section id="services-details" class="services-details">
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Home & Office Cleaning</li>
+      <li>Deep Cleaning</li>
+      <li>Sofa & Carpet Cleaning</li>
+      <li>Window & Glass Cleaning</li>
+    </ul>
+  </section>
+
+  <section id="book-now" class="book-now">
+    <h2>Ready to book your cleaning service?</h2>
+    <form id="serviceBookingForm">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service">
+        <option value="Home & Office Cleaning">Home & Office Cleaning</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+        <option value="Sofa & Carpet Cleaning">Sofa & Carpet Cleaning</option>
+        <option value="Window & Glass Cleaning">Window & Glass Cleaning</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 GenieHands. Made with 💜 in India.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
