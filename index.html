@@ -8,31 +8,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Header Section -->
   <header>
     <div class="logo">🧞‍♂️ <span>Home Genie</span></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#how">How It Works</a>
-      <a href="#contact">Contact</a>
+    <nav id="navbar">
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="toggleDark">🌙</button>
+      <button id="menuToggle" class="menu-toggle">☰</button> <!-- Mobile menu toggle -->
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to <span class="highlight">Home Genie</span></h1>
-    <p>Your magical solution for trusted home services!</p>
-    <a href="#services" class="cta">Explore Services</a>
-  </section>
-
-  <section id="services" class="services">
-    <h2>Available Services</h2>
-    <div class="service-grid">
-      <div class="card">🔧 <h3>Plumber</h3></div>
-      <div class="card">💡 <h3>Electrician</h3></div>
-      <div class="card">👨‍🍳 <h3>Cook</h3></div>
-      <div class="card">🧹 <h3>Cleaning</h3></div>
+    <div class="hero-overlay">
+      <h1>Welcome to <span class="highlight">Home Genie</span></h1>
+      <p>Your magical solution for trusted home services!</p>
+      <a href="#services" class="cta">Explore Services</a>
     </div>
   </section>
 
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Magical Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <a href="#plumber">
+          🔧 <h3>Plumber</h3>
+          <p>Water leakage? Pipe problems? We’ve got you covered.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#electrician">
+          💡 <h3>Electrician</h3>
+          <p>Fix wiring, lighting, and power issues quickly!</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#cook">
+          👨‍🍳 <h3>Cook</h3>
+          <p>Need a personal chef for special occasions?</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#cleaning">
+          🧹 <h3>Cleaning</h3>
+          <p>Home, office, and deep cleaning services!</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#ac">
+          🛠 <h3>AC Mechanic</h3>
+          <p>Keep your cooling system running smoothly!</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#carpenter">
+          🧰 <h3>Carpenter</h3>
+          <p>Furniture repair, assembly, and custom woodwork.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#painter">
+          🧑‍🎨 <h3>Painter</h3>
+          <p>Freshen up your walls with quality painting services!</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#sofa">
+          🧼 <h3>Sofa Cleaning</h3>
+          <p>Deep cleaning for your sofas and cushions.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
   <section id="how" class="how-it-works">
     <h2>How It Works</h2>
     <ol>
@@ -43,6 +97,17 @@
     </ol>
   </section>
 
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="slider" id="testimonialSlider">
+      <div class="testimonial">“Super fast and professional service. Loved it!” - Priya S.</div>
+      <div class="testimonial">“Best electrician I’ve hired online.” - Ramesh D.</div>
+      <div class="testimonial">“Booking was smooth and instant.” - Nikhil T.</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>📧 support@homegenie.com</p>
@@ -50,6 +115,7 @@
     <p>📍 Ahmedabad, Gujarat</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Home Genie. Made with 💜 in India.</p>
   </footer>
@@ -57,3 +123,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
