@@ -12,24 +12,17 @@
     <div class="logo">🧞‍♂️ <span>GenieHands</span></div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Services</a>
-          <div class="dropdown-content">
-            <a href="#services">All Services</a>
-            <a href="#plumbing">Plumbing</a>
-            <a href="#electricity">Electricity</a>
-            <a href="#cleaning">Cleaning</a>
-            <a href="#carpentry">Carpentry</a>
-          </div>
-        </li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plumbing.html">Plumbing</a></li>
+        <li><a href="electricity.html">Electricity</a></li>
+        <li><a href="cleaning.html">Cleaning</a></li>
+        <li><a href="carpentry.html">Carpentry</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero" id="home">
+  <section class="hero">
     <h1>Welcome to <span class="highlight">GenieHands</span></h1>
     <p>Your magical solution for trusted home services!</p>
     <a href="#services" class="cta">Explore Services</a>
@@ -38,21 +31,25 @@
   <section id="services" class="services">
     <h2>🛠 Available Services</h2>
     <div class="service-grid">
-      <div class="card" id="plumbing">
-        🔧 <h3>Plumbing</h3>
-        <a href="plumbing.html">More Info</a>
+      <div class="card">
+        <a href="plumbing.html">
+          🔧 <h3>Plumbing</h3>
+        </a>
       </div>
-      <div class="card" id="electricity">
-        💡 <h3>Electricity</h3>
-        <a href="electricity.html">More Info</a>
+      <div class="card">
+        <a href="electricity.html">
+          💡 <h3>Electricity</h3>
+        </a>
       </div>
-      <div class="card" id="cleaning">
-        🧹 <h3>Cleaning</h3>
-        <a href="cleaning.html">More Info</a>
+      <div class="card">
+        <a href="cleaning.html">
+          🧹 <h3>Cleaning</h3>
+        </a>
       </div>
-      <div class="card" id="carpentry">
-        🧰 <h3>Carpentry</h3>
-        <a href="carpentry.html">More Info</a>
+      <div class="card">
+        <a href="carpentry.html">
+          🪚 <h3>Carpentry</h3>
+        </a>
       </div>
     </div>
   </section>
@@ -62,43 +59,43 @@
     <ol>
       <li>📍 Choose your location</li>
       <li>🔍 Browse service providers</li>
-      <li>📅 Book your Genie</li>
-      <li>✨ Service delivered magically!</li>
+      <li>📅 Book your task</li>
+      <li>🧞‍♂️ Service delivered magically!</li>
     </ol>
   </section>
 
+  <section id="why" class="why-choose-us">
+    <h2>🌟 Why Choose Us?</h2>
+    <div class="stats">
+      <div><strong>500+</strong><p>Happy Customers</p></div>
+      <div><strong>100%</strong><p>Verified Professionals</p></div>
+      <div><strong>24/7</strong><p>Support & Service</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>💬 What Our Users Say</h2>
+    <div class="slider">
+      <div class="testimonial">“Super fast and professional service. Loved it!” - Priya S.</div>
+      <div class="testimonial">“Best electrician I’ve hired online.” - Ramesh D.</div>
+      <div class="testimonial">“Booking was smooth and instant.” - Nikhil T.</div>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
+    <h2>📞 Get In Touch</h2>
+    <p>If you have any questions or want to inquire about our services, feel free to reach out!</p>
     <p>📧 support@geniehands.com</p>
     <p>📞 +91 98765 43210</p>
     <p>📍 Ahmedabad, Gujarat</p>
   </section>
 
   <footer>
-    <p>© 2025 GenieHands. Made with 💜 in India.</p>
+    <div class="footer-content">
+      <p>© 2025 GenieHands. Made with 💜 in India.</p>
+    </div>
   </footer>
-
-  <!-- Service Booking Form -->
-  <section class="book-service">
-    <h2>Book a Service</h2>
-    <form id="serviceBookingForm">
-      <label for="service">Choose Service:</label>
-      <select id="service" name="service" required>
-        <option value="plumber">Plumber</option>
-        <option value="electrician">Electrician</option>
-        <option value="cleaning">Cleaning</option>
-        <option value="cook">Cook</option>
-      </select>
-
-      <label for="date">Select Date:</label>
-      <input type="date" id="date" name="date" required>
-
-      <button type="submit" class="cta">Book Now</button>
-    </form>
-  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
