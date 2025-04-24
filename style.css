@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5ff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #8246d0;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  #services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #services li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
