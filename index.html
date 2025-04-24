@@ -3,92 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Genie - Magical Home Services</title>
+  <title>GenieHands – Magical Home Services</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <div class="logo">🧞‍♂️ <span>Home Genie</span></div>
-    <nav id="navbar">
-      <ul id="navLinks" class="nav-links">
-        <li><a href="#services">Services</a></li>
+    <div class="logo">🧞‍♂️ <span>GenieHands</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Services</a>
+          <div class="dropdown-content">
+            <a href="#services">All Services</a>
+            <a href="#plumbing">Plumbing</a>
+            <a href="#electricity">Electricity</a>
+            <a href="#cleaning">Cleaning</a>
+            <a href="#carpentry">Carpentry</a>
+          </div>
+        </li>
         <li><a href="#how">How It Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="toggleDark">🌙</button>
-      <button id="menuToggle" class="menu-toggle">☰</button> <!-- Mobile menu toggle -->
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <h1>Welcome to <span class="highlight">Home Genie</span></h1>
-      <p>Your magical solution for trusted home services!</p>
-      <a href="#services" class="cta">Explore Services</a>
-    </div>
+  <section class="hero" id="home">
+    <h1>Welcome to <span class="highlight">GenieHands</span></h1>
+    <p>Your magical solution for trusted home services!</p>
+    <a href="#services" class="cta">Explore Services</a>
   </section>
 
-  <!-- Services Section -->
   <section id="services" class="services">
-    <h2>Our Magical Services</h2>
+    <h2>🛠 Available Services</h2>
     <div class="service-grid">
-      <div class="card">
-        <a href="#plumber">
-          🔧 <h3>Plumber</h3>
-          <p>Water leakage? Pipe problems? We’ve got you covered.</p>
-        </a>
+      <div class="card" id="plumbing">
+        🔧 <h3>Plumbing</h3>
+        <a href="plumbing.html">More Info</a>
       </div>
-      <div class="card">
-        <a href="#electrician">
-          💡 <h3>Electrician</h3>
-          <p>Fix wiring, lighting, and power issues quickly!</p>
-        </a>
+      <div class="card" id="electricity">
+        💡 <h3>Electricity</h3>
+        <a href="electricity.html">More Info</a>
       </div>
-      <div class="card">
-        <a href="#cook">
-          👨‍🍳 <h3>Cook</h3>
-          <p>Need a personal chef for special occasions?</p>
-        </a>
+      <div class="card" id="cleaning">
+        🧹 <h3>Cleaning</h3>
+        <a href="cleaning.html">More Info</a>
       </div>
-      <div class="card">
-        <a href="#cleaning">
-          🧹 <h3>Cleaning</h3>
-          <p>Home, office, and deep cleaning services!</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#ac">
-          🛠 <h3>AC Mechanic</h3>
-          <p>Keep your cooling system running smoothly!</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#carpenter">
-          🧰 <h3>Carpenter</h3>
-          <p>Furniture repair, assembly, and custom woodwork.</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#painter">
-          🧑‍🎨 <h3>Painter</h3>
-          <p>Freshen up your walls with quality painting services!</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#sofa">
-          🧼 <h3>Sofa Cleaning</h3>
-          <p>Deep cleaning for your sofas and cushions.</p>
-        </a>
+      <div class="card" id="carpentry">
+        🧰 <h3>Carpentry</h3>
+        <a href="carpentry.html">More Info</a>
       </div>
     </div>
   </section>
 
-  <!-- How It Works Section -->
   <section id="how" class="how-it-works">
-    <h2>How It Works</h2>
+    <h2>✨ How It Works</h2>
     <ol>
       <li>📍 Choose your location</li>
       <li>🔍 Browse service providers</li>
@@ -97,30 +67,38 @@
     </ol>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="slider" id="testimonialSlider">
-      <div class="testimonial">“Super fast and professional service. Loved it!” - Priya S.</div>
-      <div class="testimonial">“Best electrician I’ve hired online.” - Ramesh D.</div>
-      <div class="testimonial">“Booking was smooth and instant.” - Nikhil T.</div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>📧 support@homegenie.com</p>
+    <p>📧 support@geniehands.com</p>
     <p>📞 +91 98765 43210</p>
     <p>📍 Ahmedabad, Gujarat</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Home Genie. Made with 💜 in India.</p>
+    <p>© 2025 GenieHands. Made with 💜 in India.</p>
   </footer>
+
+  <!-- Service Booking Form -->
+  <section class="book-service">
+    <h2>Book a Service</h2>
+    <form id="serviceBookingForm">
+      <label for="service">Choose Service:</label>
+      <select id="service" name="service" required>
+        <option value="plumber">Plumber</option>
+        <option value="electrician">Electrician</option>
+        <option value="cleaning">Cleaning</option>
+        <option value="cook">Cook</option>
+      </select>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit" class="cta">Book Now</button>
+    </form>
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
